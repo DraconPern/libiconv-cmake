@@ -105,6 +105,8 @@ target_link_libraries(${libname} libcharset)
 list(APPEND Libiconv_TARGETS ${libname})
 list(APPEND Libiconv_headers ${Libiconv_BINARY_DIR}/iconv.h)
 
+SET_TARGET_PROPERTIES(${libname} PROPERTIES STATIC_LIBRARY_FLAGS ${Libiconv_BINARY_DIR}/${CMAKE_CFG_INTDIR}/libcharset.lib)
+
 #
 # Export targets
 #
