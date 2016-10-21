@@ -8,7 +8,6 @@ project(Libiconv)
 #
 # Options
 #
-set(BUILD_SHARED_LIBS ON CACHE BOOL "Build shared libraries, Always ON since this code is LGPL" FORCE)
 
 # Config file
 configure_file(
